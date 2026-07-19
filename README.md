@@ -1,4 +1,4 @@
-# 📱 Used Phone Price Prediction
+#  Used Phone Price Prediction
 
 ##  Project Overview
 
