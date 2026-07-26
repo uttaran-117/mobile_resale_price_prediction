@@ -39,7 +39,7 @@ This project uses a machine learning pipeline to estimate the resale price of a 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 mobile_resale_price_prediction/
@@ -107,7 +107,7 @@ data/output_mobile_resale_price.csv
 
 ---
 
-## ⚙️ Model Training
+##  Model Training
 
 To retrain the model using the original dataset, run:
 
