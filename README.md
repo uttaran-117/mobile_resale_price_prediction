@@ -1,127 +1,140 @@
-#  Used Phone Price Prediction
+#  Mobile Resale Price Prediction
+
+A Machine Learning project that predicts the resale price of used smartphones based on their specifications, condition, and market-related features.
+
+---
 
 ##  Project Overview
 
-This project predicts the resale price of used smartphones using Machine Learning. It is built using Python and Scikit-learn and demonstrates the complete ML workflow, from data preprocessing to model deployment.
+This project uses a machine learning pipeline to estimate the resale price of a used smartphone. The complete workflow includes:
 
-> **Note:** The dataset used in this project is **synthetically generated** and was obtained from Kaggle. It is designed to simulate real-world used smartphone resale data for learning and experimentation.
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- Prediction on new data
 
 ---
 
-##  Objective
+##  Features
 
-To build a machine learning model that accurately predicts the resale price of a used smartphone based on its specifications.
-
----
-
-##  Dataset
-
-- **Source:** Kaggle
-- **Rows:** ~1 Million
-- **Type:** Synthetic dataset (designed to resemble real-world resale market data)
+- Data preprocessing using Scikit-learn Pipelines
+- Automatic handling of numerical and categorical features
+- One-Hot Encoding for categorical variables
+- Feature Scaling
+- Random Forest Regressor for prediction
+- Predict resale price for new smartphone data
 
 ---
 
 ##  Technologies Used
 
 - Python
-- Pandas
 - NumPy
+- Pandas
 - Matplotlib
 - Scikit-learn
 - Joblib
 
 ---
 
-##  Machine Learning Workflow
-
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Stratified Train-Test Split
-- Feature Engineering
-- Data Preprocessing using ColumnTransformer
-- One-Hot Encoding
-- Feature Scaling using StandardScaler
-- Model Training
-- Model Evaluation
-- Model Serialization using Joblib
-- Prediction on New Data
-
----
-
-##  Models Used
-
-- Linear Regression
-- Random Forest Regressor
-
-The Random Forest Regressor was selected as the final model because it achieved the best performance.
-
----
-
-##  Model Performance
-
-| Metric | Value |
-|---------|--------|
-| RMSE | 3063 |
-| R^2 Score | 0.968 |
-
----
-
-##  Project Structure
+## 📂 Project Structure
 
 ```
-Used-Phone-Price-Prediction/
+mobile_resale_price_prediction/
 │
 ├── data/
-│   ├── used_phone_price.csv
 │   ├── input_mobile_resale_price.csv
 │   └── output_mobile_resale_price.csv
 │
 ├── models/
-│   ├── model.pkl
 │   └── pipeline.pkl
 │
 ├── main.py
 ├── model_selection.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
+
+---
+
+##  Model Performance
+
+| Metric | Score |
+|--------|--------|
+| R² Score | **0.968** |
+| RMSE | **≈ 3063** |
+
+---
+
+## ## Dataset
+
+The original dataset has been excluded from this repository.
+
+Download it from Kaggle:
+
+[[Dataset Link](https://www.kaggle.com/datasets/sharmajicoder/used-phone-price-prediction-dataset)]
 
 ---
 
 ##  How to Run
 
-1. Clone the repository.
+### 1. Clone the repository
 
-2. Install the required libraries.
-
+```bash
+git clone https://github.com/uttaran-117/mobile_resale_price_prediction.git
 ```
+
+### 2. Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-3. Run the prediction script.
+### 3. Run prediction
 
-```
+```bash
 python main.py
 ```
 
-The predicted resale prices will be saved in:
+Predictions will be saved as:
 
 ```
-output_mobile_resale_price.csv
+data/output_mobile_resale_price.csv
 ```
+
+---
+
+## ⚙️ Model Training
+
+To retrain the model using the original dataset, run:
+
+```bash
+python model_selection.py
+```
+
+**Note:** The trained `model.pkl` file is intentionally excluded from this repository because of its large size.
 
 ---
 
 ##  Future Improvements
 
 - Hyperparameter tuning
-- Model deployment using Flask or FastAPI
-- Interactive web application
-- Support for additional smartphone brands and features
+- XGBoost/LightGBM implementation
+- Flask/FastAPI deployment
+- Interactive web interface
+- Model explainability using SHAP
 
 ---
 
 ##  Author
 
 **Uttaran Kanungo**
+
+GitHub: https://github.com/uttaran-117
+
+---
+
+##  If you found this project useful, consider giving it a star!
