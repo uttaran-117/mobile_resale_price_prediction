@@ -64,7 +64,7 @@ mobile_resale_price_prediction/
 
 | Metric | Score |
 |--------|--------|
-| R² Score | **0.968** |
+| R^2 Score | **0.968** |
 | RMSE | **≈ 3063** |
 
 ---
