@@ -69,7 +69,7 @@ mobile_resale_price_prediction/
 
 ---
 
-## ## Dataset
+##  Dataset
 
 The original dataset has been excluded from this repository.
 
